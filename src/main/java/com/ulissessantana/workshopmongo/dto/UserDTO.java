@@ -14,7 +14,7 @@ public class UserDTO {
 
 	public UserDTO (User obj) {
 		id = obj.getId();
-		name = obj.getId();
+		name = obj.getName();
 		email = obj.getEmail();
 	}
 
