@@ -11,9 +11,12 @@ public class AuthorDTO implements Serializable {
 	private String id;
 	private String name;
 	
-	public AuthorDTO (User obj) {
-		id = obj.getId();
-		name = obj.getName();
+	public AuthorDTO() {
+	  
+	}
+	public AuthorDTO(User obj) {
+	    setId(obj.getId());
+	    setName(obj.getName());
 	}
 
 	public String getId() {
@@ -31,10 +34,5 @@ public class AuthorDTO implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-	
 	
 }
