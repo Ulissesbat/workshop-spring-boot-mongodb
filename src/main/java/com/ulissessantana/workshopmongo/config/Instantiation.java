@@ -43,7 +43,8 @@ public class Instantiation<UserReposiroty> implements CommandLineRunner{
 		
 		postRepository.saveAll(Arrays.asList(post1, post2));
 		
-		maria.getPostes().addAll(Arrays.asList(post1, post2));
+		maria.getPosts().addAll(Arrays.asList(post1, post2));
+		System.out.println("Posts associados ao usuário: " + maria.getPosts());
 		userRepository.save(maria);
 	}
 
